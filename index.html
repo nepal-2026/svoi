@@ -1,0 +1,1120 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<link rel="preload" as="image" href="img/hero-drug.webp">
+<meta name="description" content="Непал для своих — 11 дней, 14–24 ноября 2026: тибетский квартал Катманду, Патан, озеро Фева и четырёхдневный трек Гхорепани — Пунхилл — Гандрук. Группа до 6 человек.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Непал для своих — 11 дней, ноябрь 2026">
+<meta property="og:description" content="Затеряемся в переулках старого города, встретим рассвет в Гималаях и, возможно, узнаем себя чуть лучше. 14–24 ноября 2026, максимум 6 человек.">
+<meta property="og:image" content="preview.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🏔️</text></svg>">
+<title>Непал для своих</title>
+<meta name="description" content="Непал для своих — 11 дней: тибетский квартал Катманду, Патан, озеро Фева и четырёхдневный трек Гхорепани — Пунхилл — Гандрук.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Prata&family=Golos+Text:wght@400;500;600&display=swap" rel="stylesheet">
+<style id="css">
+  :root {
+    --paper: #F5F1E9;
+    --paper-2: #EAE4D6;
+    --ink: #23372F;
+    --ink-2: #1A2A24;
+    --muted: #6B7269;
+    --line: #D8D6C9;
+    --terra: #BC5533;
+    --cream: #E7D9BA;
+    --gold: #C09A4E;
+    --serif: "Prata", Georgia, "Times New Roman", serif;
+    --sans: "Golos Text", "Avenir Next", "Segoe UI", system-ui, sans-serif;
+  }
+
+  * { box-sizing: border-box; }
+  figure { margin: 0; }
+  html { scroll-behavior: smooth; scroll-padding-top: 20px; }
+
+  body {
+    background: var(--paper);
+    color: var(--ink);
+    font-family: var(--sans);
+    font-size: 16px;
+    line-height: 1.7;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  h1, h2, h3 { font-family: var(--serif); font-weight: 400; line-height: 1.2; }
+  h2 { font-size: clamp(25px, 4.2vw, 56px); letter-spacing: -.02em; overflow-wrap: break-word; }
+  p + p { margin-top: 14px; }
+
+  .wrap { width: min(1200px, calc(100% - 80px)); margin: 0 auto; }
+
+  .eyebrow {
+    text-transform: uppercase;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: .22em;
+    line-height: 1.5;
+  }
+  .muted { color: var(--muted); }
+
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+    min-height: 54px;
+    padding: 14px 24px;
+    background: var(--terra);
+    color: #FFF;
+    border: 1px solid var(--terra);
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    transition: background .2s ease, transform .2s ease;
+  }
+  .btn:hover { background: #A4462A; transform: translateY(-2px); }
+  .btn.light { background: var(--cream); color: var(--ink); border-color: var(--cream); }
+  .btn.light:hover { background: #DCCBA4; }
+
+  /* ---------- шапка ---------- */
+
+  .nav {
+    position: sticky;
+    top: 0;
+    z-index: 20;
+    height: 88px;
+    background: var(--paper);
+    border-bottom: 1px solid var(--line);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 48px;
+  }
+  .brand { display: flex; align-items: center; gap: 12px; text-decoration: none; color: inherit; }
+  .brand-mark {
+    width: 34px; height: 34px;
+    border: 1px solid var(--ink);
+    border-radius: 50%;
+    display: grid; place-items: center;
+    font-size: 19px;
+  }
+  .brand-text { font-size: 13px; font-weight: 600; letter-spacing: .08em; }
+  .brand-sub { display: block; font-size: 9px; letter-spacing: .16em; text-transform: uppercase; color: var(--muted); font-weight: 400; }
+  .navlinks { display: flex; gap: 30px; align-items: center; }
+  .navlinks a { text-decoration: none; font-size: 12.5px; color: inherit; }
+  .navlinks a:hover { color: var(--terra); }
+  .nav-cta { border-bottom: 1px solid var(--ink); padding-bottom: 2px; }
+
+  /* ---------- герой ---------- */
+
+  .hero {
+    position: relative;
+    min-height: 620px;
+    height: 100svh;
+    max-height: 760px;
+    display: flex;
+    color: #FFF;
+    overflow: hidden;
+    background: #46564F;
+  }
+  .hero-bg {
+    position: absolute; inset: 0;
+    background-size: cover;
+    background-position: 50% 24%;
+  }
+  .hero::after {
+    content: "";
+    position: absolute; inset: 0;
+    background:
+      linear-gradient(90deg, rgba(14,28,24,.88), rgba(16,32,27,.45) 52%, rgba(16,32,27,.08) 88%),
+      linear-gradient(0deg, rgba(16,32,27,.55), transparent 48%);
+  }
+  .hero-inner {
+    position: relative;
+    min-width: 0;
+    z-index: 2;
+    width: min(1200px, calc(100% - 80px));
+    margin: 0 auto;
+    padding: 60px 0 34px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .hero .eyebrow { color: var(--cream); }
+  .hero h1 {
+    font-size: clamp(30px, 5.4vw, 74px);
+    letter-spacing: -.025em;
+    max-width: 15ch;
+    overflow-wrap: break-word;
+    margin: 24px 0 18px;
+  }
+  .hero h1 em { font-style: normal; color: var(--cream); }
+  .hero .lead { max-width: 46ch; font-size: 17px; line-height: 1.7; color: #F2EFE7; white-space: pre-line; }
+  .hero-actions { display: flex; align-items: center; gap: 26px; margin-top: 30px; flex-wrap: wrap; }
+  .hero-actions .btn { min-height: 68px; padding: 18px 34px; font-size: 17px; font-weight: 500; gap: 30px; }
+  .hero-when {
+    font-family: var(--serif);
+    font-size: clamp(24px, 3.4vw, 42px);
+    line-height: 1.15;
+    letter-spacing: -.01em;
+    color: var(--cream);
+    margin-top: 26px;
+  }
+  .hero-link { font-size: 13px; text-decoration: none; color: #FFF; border-bottom: 1px solid rgba(255,255,255,.45); padding-bottom: 5px; }
+  .hero-foot {
+    margin-top: auto;
+    padding-top: 28px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 20px;
+    font-size: 11.5px;
+    letter-spacing: .04em;
+    color: #E6E3D9;
+  }
+  .hero-foot .place { max-width: 24ch; text-align: right; }
+
+  /* ---------- факты ---------- */
+
+  .facts {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    padding: 30px 0;
+    border-bottom: 1px solid var(--line);
+  }
+  .fact { padding: 0 28px; border-right: 1px solid var(--line); }
+  .fact:first-child { padding-left: 0; }
+  .fact:last-child { border-right: 0; }
+  .fact strong { display: block; font-size: 18px; font-weight: 500; }
+  .fact span { font-size: 12.5px; color: var(--muted); }
+
+  /* ---------- вступление ---------- */
+
+  .intro { padding: 90px 0 46px; display: grid; grid-template-columns: .9fr 1.1fr; gap: 90px; }
+  .intro h2 { margin-top: 20px; }
+  .intro-copy { padding-top: 28px; font-size: 17px; color: var(--muted); }
+  .intro-copy .big { font-size: 20px; line-height: 1.62; color: var(--ink); }
+  .intro-sign { display: none; }
+
+  /* ---------- три момента ---------- */
+
+  .moments { padding-bottom: 100px; }
+  .section-head { margin-bottom: 30px; }
+  .section-head h2 { margin-top: 12px; }
+  .section-head > p { max-width: 70ch; font-size: 15.5px; color: var(--muted); margin-top: 2px; }
+  .moment-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+  .moment figure { position: relative; height: 360px; overflow: hidden; background: #BDC3B4; }
+  .moment .shot { position: absolute; inset: 0; background-size: cover; background-position: center; transition: transform .7s ease; }
+  .moment:hover .shot { transform: scale(1.04); }
+  .moment .index { display: none; }
+  .moment h3 { font-size: 24px; margin: 22px 0 10px; }
+  .moment p { font-size: 14px; color: var(--muted); }
+  .moment .caption { font-size: 10.5px; margin-top: 10px; color: var(--muted); text-transform: uppercase; letter-spacing: .12em; }
+
+  /* ---------- маршрут ---------- */
+
+  .route { background: var(--ink); color: var(--paper); padding: 62px 0; }
+  .route .wrap { display: grid; grid-template-columns: 1fr 2fr; gap: 60px; align-items: center; }
+  .route h2 { font-size: 34px; margin-top: 12px; }
+  .route .eyebrow { color: var(--cream); }
+  .route-track { display: grid; grid-template-columns: 1.3fr 1fr 1.1fr; gap: 20px; }
+  .route-stop { border-top: 1px solid #8FA096; padding-top: 18px; position: relative; }
+  .route-stop::before {
+    content: ""; position: absolute; left: 0; top: -4px;
+    width: 7px; height: 7px; border-radius: 50%; background: var(--cream);
+  }
+  .route-stop b { display: block; font-size: 17px; font-weight: 500; }
+  .route-stop span { font-size: 12px; color: #C2CCC3; }
+  .route-stop small { display: block; font-size: 10.5px; color: var(--cream); margin-top: 9px; letter-spacing: .06em; }
+
+  /* ---------- программа ---------- */
+
+  .program { padding: 80px 0; }
+  .program-title p { max-width: 52ch; font-size: 14px; color: var(--muted); margin-top: 14px; }
+  .days-nav { display: flex; flex-wrap: wrap; gap: 8px; margin: 28px 0 50px; }
+  .days-nav a {
+    text-decoration: none; color: inherit;
+    min-width: 70px; height: 42px; padding: 0 12px;
+    display: grid; place-items: center;
+    border: 1px solid var(--line);
+    font-size: 12px;
+  }
+  .days-nav a:hover { background: var(--ink); color: #FFF; border-color: var(--ink); }
+
+  .day {
+    display: grid;
+    grid-template-columns: .95fr 1.05fr;
+    gap: 64px;
+    padding: 52px 0;
+    border-top: 1px solid var(--line);
+    scroll-margin-top: 100px;
+  }
+  .day-visual { position: relative; min-height: 360px; overflow: hidden; background: #B8BFB0; }
+  .day-visual .shot { position: absolute; inset: 0; background-size: cover; background-position: center; }
+  .day-visual figcaption {
+    position: absolute; bottom: 0; left: 0; right: 0;
+    padding: 46px 20px 16px;
+    background: linear-gradient(transparent, rgba(16,39,32,.72));
+    color: #FFF;
+    font-size: 11.5px;
+    z-index: 2;
+  }
+  .day:nth-of-type(even) .day-visual { order: 2; }
+  .day-heading { display: flex; align-items: center; flex-wrap: wrap; gap: 8px 16px; margin-bottom: 14px; }
+  .day-no { font-size: 12px; font-weight: 600; color: var(--terra); }
+  .day-place { font-size: 10.5px; text-transform: uppercase; letter-spacing: .16em; color: var(--muted); }
+  .day h3 { font-size: 30px; margin-bottom: 18px; }
+  .day p { font-size: 14.5px; color: var(--muted); }
+  .legend {
+    font-family: var(--serif);
+    font-style: italic;
+    font-size: 14.5px;
+    line-height: 1.66;
+    color: #5E6A5C;
+    border-left: 2px solid var(--gold);
+    padding-left: 16px;
+    margin-bottom: 18px;
+  }
+  .day-meta { margin-top: 20px; padding-top: 14px; border-top: 1px solid var(--line); font-size: 11.5px; color: var(--muted); }
+
+  /* ---------- баннер с горами ---------- */
+
+  .mountain {
+    position: relative;
+    min-height: 480px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #FFF;
+    overflow: hidden;
+    background: #58665E;
+  }
+  .mountain .shot { position: absolute; inset: 0; background-size: cover; background-position: center 40%; }
+  .mountain::after { content: ""; position: absolute; inset: 0; background: linear-gradient(rgba(17,41,29,.34), rgba(17,41,29,.6)); }
+  .mountain .wrap { position: relative; z-index: 2; }
+  .mountain h2 { max-width: 22ch; margin: 18px auto; }
+  .mountain p { max-width: 52ch; margin: 0 auto; font-size: 15px; color: #F1EFE6; }
+  .mountain .eyebrow { color: var(--cream); }
+
+  /* ---------- как живём ---------- */
+
+  .comfort { padding: 100px 0; }
+  .comfort-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 38px; margin-top: 42px; }
+  .comfort-item { border-top: 1px solid var(--line); padding-top: 22px; }
+  .comfort-item .n { color: var(--terra); font-size: 12px; letter-spacing: .1em; }
+  .comfort-item h3 { font-size: 23px; margin: 13px 0; }
+  .comfort-item p { font-size: 14px; color: var(--muted); }
+
+  /* ---------- даты ---------- */
+
+  .booking { background: var(--paper-2); padding: 90px 0; }
+  .booking .wrap { display: grid; grid-template-columns: 1fr 1.05fr; gap: 72px; }
+  .booking h2 { margin: 18px 0 22px; }
+  .booking-lead { max-width: 42ch; font-size: 15px; color: var(--muted); }
+  .price-note { border-top: 1px solid #C8C6B7; padding-top: 20px; margin-top: 28px; max-width: 44ch; font-size: 13.5px; }
+  .date-card {
+    display: flex; align-items: center; justify-content: space-between; gap: 16px;
+    border: 1px solid #C9C9BC;
+    padding: 22px 24px;
+    margin-bottom: 12px;
+  }
+  .date-card .date-large { display: block; font-size: 21px; font-weight: 500; }
+  .date-card .date-small { font-size: 12px; color: var(--muted); }
+  .date-card .tag { font-size: 10.5px; text-transform: uppercase; letter-spacing: .14em; color: var(--terra); white-space: nowrap; }
+
+  /* ---------- стоимость ---------- */
+
+  .price { background: var(--ink); color: var(--paper); padding: 96px 0; }
+  .price .eyebrow { color: var(--cream); }
+  .price h2 { margin: 12px 0 40px; color: var(--paper); }
+  .price-top { display: grid; grid-template-columns: 1fr 1fr; gap: 56px; align-items: start; margin-bottom: 52px; }
+  .price-sum {
+    font-family: var(--serif);
+    font-size: clamp(40px, 5.6vw, 72px);
+    line-height: 1.05;
+    letter-spacing: -.02em;
+    color: var(--cream);
+  }
+  .price-sub { font-size: 15px; color: #C2CCC3; margin-top: 12px; }
+  .price-when {
+    font-family: var(--serif);
+    font-size: 23px;
+    color: var(--paper);
+    margin-top: 18px;
+  }
+  .price-extra { border-top: 1px solid #8FA096; padding-top: 18px; margin-top: 24px; font-size: 15px; color: #D9E0D8; }
+  .price-extra b { color: var(--paper); font-weight: 600; }
+  .price-book { font-size: 16px; color: #D9E0D8; }
+  .price-book b { color: var(--cream); font-weight: 600; }
+  .price-book p + p { margin-top: 12px; }
+  .incl { display: grid; grid-template-columns: 1fr 1fr; gap: 56px; }
+  .incl h3 {
+    font-family: var(--sans);
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: .14em;
+    text-transform: uppercase;
+    color: var(--cream);
+    margin-bottom: 16px;
+  }
+  .incl ul { list-style: none; }
+  .incl li { position: relative; padding-left: 20px; font-size: 15.5px; color: #D9E0D8; padding-bottom: 10px; }
+  .incl li::before { content: ""; position: absolute; left: 0; top: 11px; width: 8px; height: 1px; background: var(--cream); }
+  .incl .out li { color: #BCC7BD; }
+  .price-deal {
+    margin-top: 48px;
+    padding-top: 28px;
+    border-top: 1px solid #8FA096;
+    display: grid;
+    grid-template-columns: 1.2fr .8fr;
+    gap: 40px;
+    align-items: center;
+  }
+  .price-deal p { font-size: 16px; color: #D9E0D8; max-width: 52ch; }
+  .price-deal .btn { justify-self: start; }
+
+  /* ---------- полоска с ценой на телефоне ---------- */
+
+  .paybar { display: none; }
+
+  @media (max-width: 760px) {
+    .paybar {
+      display: flex;
+      position: fixed;
+      left: 0; right: 0; bottom: 0;
+      z-index: 40;
+      align-items: center;
+      justify-content: space-between;
+      gap: 14px;
+      background: var(--ink);
+      padding: 10px 16px calc(10px + env(safe-area-inset-bottom, 0px));
+      box-shadow: 0 -8px 24px rgba(20,35,30,.22);
+      transform: translateY(110%);
+      transition: transform .25s ease;
+    }
+    .paybar.show { transform: translateY(0); }
+    .paybar .sum { font-family: var(--serif); font-size: 20px; color: var(--cream); line-height: 1.1; }
+    .paybar .sum span { display: block; font-family: var(--sans); font-size: 10.5px; letter-spacing: .1em; text-transform: uppercase; color: #A9B5AB; margin-top: 2px; }
+    .paybar .btn { min-height: 46px; padding: 12px 18px; font-size: 14px; gap: 12px; }
+    body { padding-bottom: 76px; }
+  }
+
+  /* ---------- вопросы ---------- */
+
+  .faq { padding: 96px 0; display: grid; grid-template-columns: .8fr 1.2fr; gap: 80px; }
+  .faq h2 { margin-top: 16px; font-size: clamp(25px, 3.4vw, 44px); }
+  .faq details { border-bottom: 1px solid var(--line); }
+  .faq details:first-of-type { border-top: 1px solid var(--line); }
+  .faq summary {
+    list-style: none;
+    padding: 20px 30px 20px 0;
+    font-size: 15px;
+    cursor: pointer;
+    position: relative;
+  }
+  .faq summary::-webkit-details-marker { display: none; }
+  .faq summary::after { content: "+"; position: absolute; right: 4px; top: 14px; font-size: 22px; }
+  .faq details[open] summary::after { content: "\2212"; }
+  .faq details p { font-size: 14px; color: var(--muted); padding: 0 24px 22px 0; }
+
+  /* ---------- финал ---------- */
+
+  .closing { padding: 0 0 96px; text-align: center; }
+  .closing .symbol { font-size: 32px; color: var(--terra); }
+  .closing h2 { max-width: 24ch; margin: 16px auto 24px; }
+  .closing p { font-size: 14px; color: var(--muted); margin-bottom: 24px; }
+
+  .footer { background: var(--ink); color: #DCDBC9; padding: 32px 0; }
+  .footer-top { display: flex; justify-content: space-between; align-items: center; gap: 20px; font-size: 11.5px; }
+  .footer-top .up { text-decoration: none; color: inherit; }
+
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    * { transition: none !important; }
+  }
+
+  @media (max-width: 1050px) {
+    .wrap, .hero-inner { width: calc(100% - 56px); }
+    .nav { padding: 0 28px; }
+    .intro { gap: 48px; }
+    .day { gap: 34px; }
+    .booking .wrap, .faq { gap: 44px; }
+    .route .wrap { gap: 34px; }
+  }
+
+  @media (max-width: 760px) {
+    html, body { overflow-x: hidden; }
+    .hero { display: block; }
+    .wrap, .hero-inner { width: calc(100% - 36px); max-width: calc(100% - 36px); min-width: 0; }
+    .hero-inner { display: flex; flex-direction: column; align-items: flex-start; }
+    h1, h2, h3 { overflow-wrap: break-word; }
+    .hero h1 { font-size: 31px; line-height: 1.15; max-width: 100%; margin: 16px 0 14px; }
+    .hero .lead { font-size: 14.5px; line-height: 1.6; max-width: 100%; }
+    .hero-actions { gap: 14px; margin-top: 22px; }
+    .hero-actions .btn { min-height: 56px; padding: 14px 20px; font-size: 15px; gap: 16px; width: 100%; }
+    .hero-link { font-size: 13px; }
+    .hero-when { font-size: 25px; margin-top: 18px; }
+    .hero-foot { font-size: 10.5px; padding-top: 18px; }
+    .facts { grid-template-columns: 1fr; }
+    .fact { padding: 0; border-right: 0; border-bottom: 1px solid var(--line); padding-bottom: 14px; }
+    .fact:last-child { border-bottom: 0; padding-bottom: 0; }
+    .intro-copy .big { font-size: 17px; }
+    .day .legend { font-size: 14px; }
+    .faq summary { font-size: 14.5px; padding-right: 26px; }
+    .author p { font-size: 15.5px; }
+    .hero { height: auto; min-height: 0; max-height: none; }
+    .hero-inner { padding: 40px 0 26px; min-height: 620px; }
+    .hero-foot { flex-direction: column; align-items: flex-start; }
+    .hero-foot .place { text-align: left; }
+    .intro { grid-template-columns: 1fr; gap: 22px; padding: 64px 0; }
+    .intro-copy { padding-top: 0; }
+    .section-head { display: block; }
+    .section-head > p { margin-top: 18px; }
+    .moment-grid { grid-template-columns: 1fr; gap: 28px; }
+    .moment figure { height: 320px; }
+    .route .wrap { grid-template-columns: 1fr; }
+    .route-track { grid-template-columns: 1fr; gap: 16px; }
+    .program { padding: 62px 0; }
+    .day { grid-template-columns: 1fr; padding: 34px 0; gap: 22px; }
+    .day-visual { min-height: 290px; order: 0 !important; }
+    .day h3 { font-size: 23px; }
+    .mountain { min-height: 400px; }
+    .comfort { padding: 64px 0; }
+    .comfort-grid { grid-template-columns: 1fr; gap: 26px; }
+    .faq { padding: 60px 0; grid-template-columns: 1fr; gap: 26px; }
+  }
+
+  /* ---------- кто ведёт ---------- */
+
+  .author { padding: 90px 0; border-top: 1px solid var(--line); }
+  .author h2 { margin-top: 12px; margin-bottom: 44px; }
+  .author-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 56px; }
+  .author-grid.solo { grid-template-columns: 1fr; }
+  .author-grid.solo .person { display: grid; grid-template-columns: minmax(260px, 340px) 1fr; gap: 46px; align-items: start; }
+  .author-grid.solo .person .photo-slot { grid-row: span 6; max-width: none; }
+  .author-grid.solo .person h3 { margin-top: 0; }
+  .person .photo-slot {
+    aspect-ratio: 4 / 5;
+    max-width: 360px;
+    background-color: var(--paper-2);
+    border: 1px dashed #BFBCAD;
+    display: grid;
+    place-items: center;
+    color: var(--ink-faint, #8A8E96);
+    font-size: 12px;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    margin-bottom: 22px;
+    background-size: cover;
+    background-position: center;
+  }
+  .person .photo-slot.filled { border: 0; }
+  .person h3 { font-size: 27px; margin-bottom: 14px; }
+  .person p { font-size: 16px; color: var(--muted); }
+  .person p + p { margin-top: 13px; }
+
+  /* ---------- как поехать ---------- */
+
+  .book { background: var(--ink); color: var(--paper); padding: 96px 0; }
+  .book .eyebrow { color: var(--cream); }
+  .book h2 { margin: 14px 0 34px; color: var(--paper); }
+  .book .wrap { display: grid; grid-template-columns: 1.1fr .9fr; gap: 70px; align-items: start; }
+  .book .when {
+    font-family: var(--serif);
+    font-size: clamp(34px, 4.6vw, 58px);
+    line-height: 1.1;
+    letter-spacing: -.02em;
+    color: var(--cream);
+  }
+  .book .when-sub { font-size: 15px; color: #C2CCC3; margin-top: 12px; }
+  .book .deadline {
+    display: inline-block;
+    margin-top: 26px;
+    border: 1px solid #8FA096;
+    border-radius: 999px;
+    padding: 9px 18px;
+    font-size: 13.5px;
+    color: var(--paper);
+  }
+  .book .how { font-size: 16px; color: #D9E0D8; max-width: 44ch; }
+  .book .how p + p { margin-top: 14px; }
+  .book .btn { margin-top: 26px; }
+  .book .quiet { font-size: 13px; color: #A9B5AB; margin-top: 16px; max-width: 40ch; }
+
+  @media (max-width: 1050px) {
+    .author-grid { gap: 34px; }
+  }
+  @media (max-width: 760px) {
+    .author-grid.solo .person { grid-template-columns: 1fr; gap: 24px; }
+    .author { padding: 64px 0; }
+    .author h2 { margin-bottom: 30px; }
+    .author-grid { grid-template-columns: 1fr; gap: 44px; }
+    .price { padding: 62px 0; }
+    .price h2 { margin-bottom: 26px; }
+    .price-top { grid-template-columns: 1fr; gap: 26px; margin-bottom: 34px; }
+    .price-sum { font-size: 36px; }
+    .incl { grid-template-columns: 1fr; gap: 30px; }
+    .price-deal { grid-template-columns: 1fr; gap: 20px; margin-top: 34px; }
+    .price-deal .btn { width: 100%; }
+    .person .photo-slot { aspect-ratio: 4 / 5; max-width: 290px; }
+    .person h3 { font-size: 24px; }
+    .book { padding: 64px 0; }
+    .book h2 { margin-bottom: 22px; }
+  }
+
+  [hidden] { display: none !important; }
+  /* ---------- панель правки ---------- */
+  .editbar {
+    position: fixed; right: 18px; bottom: 18px; z-index: 60;
+    display: flex; gap: 8px; align-items: center;
+    background: var(--ink); color: #FFF;
+    border-radius: 999px; padding: 8px 10px 8px 16px;
+    box-shadow: 0 8px 30px rgba(20,35,30,.28);
+    font-size: 13px;
+  }
+  .editbar button {
+    font: inherit; border: 0; border-radius: 999px;
+    padding: 9px 16px; cursor: pointer;
+    background: var(--cream); color: var(--ink);
+  }
+  .editbar button.primary { background: var(--terra); color: #FFF; }
+  .editbar button[disabled] { opacity: .5; cursor: default; }
+  .editbar .state { opacity: .8; }
+  body.editing [data-k] { outline: 1px dashed rgba(188,85,51,.55); outline-offset: 3px; border-radius: 2px; }
+  body.editing [data-k]:focus { outline: 2px solid var(--terra); background: rgba(255,255,255,.65); }
+  @media (max-width: 760px) { .editbar { right: 10px; bottom: 10px; left: 10px; justify-content: space-between; } }
+
+  /* ---------- фотографии ---------- */
+  .im-hero-drug { background-image: url("img/hero-drug.webp"); }
+  .im-drug-boudha { background-image: url("img/drug-boudha.webp"); }
+  .im-svayambhu { background-image: url("img/svayambhu.webp"); }
+  .im-patan-rassvet { background-image: url("img/patan-rassvet.webp"); }
+  .im-feva { background-image: url("img/feva.webp"); }
+  .im-sluzhba-truby { background-image: url("img/sluzhba-truby.webp"); }
+  .im-trek-lodzha { background-image: url("img/trek-lodzha.webp"); }
+  .im-punhil-rassvet { background-image: url("img/punhil-rassvet.webp"); }
+  .im-ushchelie { background-image: url("img/ushchelie.webp"); }
+  .im-reka-gory { background-image: url("img/reka-gory.webp"); }
+  .im-holmy { background-image: url("img/holmy.webp"); }
+  .im-boudha-vecher { background-image: url("img/boudha-vecher.webp"); }
+  .im-trek-stupeni { background-image: url("img/trek-stupeni.webp"); }
+  .im-monah-nit { background-image: url("img/monah-nit.webp"); }
+  .im-gornaya-derevnya { background-image: url("img/gornaya-derevnya.webp"); }
+  .im-gryada { background-image: url("img/gryada.webp"); }
+  .im-zakat-ktm { background-image: url("img/zakat-ktm.webp"); }
+  .im-mushtari { background-image: url("img/mushtari.webp"); }
+  .im-glaza-stupy { background-image: url("img/glaza-stupy.webp"); }
+  .im-lampady { background-image: url("img/lampady.webp"); }
+  .im-drug-durbar { background-image: url("img/drug-durbar.webp"); }
+  .im-moy-noski { background-image: url("img/moy-noski.webp"); }
+  .im-moy-most { background-image: url("img/moy-most.webp"); }
+  .im-moy-tuman-trek { background-image: url("img/moy-tuman-trek.webp"); }
+
+  /* ---------- ради чего стоит ехать ---------- */
+  .reasons { display: grid; gap: 76px; margin-top: 48px; }
+  .reason { display: grid; grid-template-columns: 1fr 1.05fr; gap: 48px; align-items: center; }
+  .reason:nth-child(even) .reason-copy { order: -1; }
+  .reason-photos { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; }
+  .reason-photos .shot { background-size: cover; background-position: center; height: 130px; background-color: #BDC3B4; }
+  .reason-photos .shot.wide { grid-column: span 3; height: 300px; }
+  .reason-copy h3 { font-family: var(--serif); font-weight: 400; font-size: clamp(26px, 2.6vw, 38px); line-height: 1.15; margin-bottom: 18px; }
+  .reason-copy p { font-size: 16px; color: var(--muted); }
+  .reason-copy .caption { margin-top: 20px; font-size: 11px; font-weight: 600; letter-spacing: .22em; color: var(--terra); }
+  @media (max-width: 860px) {
+    .reasons { gap: 52px; }
+    .reason { grid-template-columns: 1fr; gap: 24px; }
+    .reason:nth-child(even) .reason-copy { order: 0; }
+    .reason-photos .shot { height: 96px; }
+    .reason-photos .shot.wide { height: 210px; }
+  }
+
+  .hero-when { font-size: clamp(22px, 2.5vw, 31px); letter-spacing: 0; }
+  .hero-sub { margin-top: 6px; font-size: 13px; letter-spacing: .12em; text-transform: uppercase; color: var(--cream); }
+  .intro h2 { font-size: clamp(27px, 3vw, 40px); white-space: pre-line; }
+  .reasons { grid-template-columns: 1fr 1fr; gap: 48px; align-items: start; }
+  .reason { display: block; }
+  .reason .reason-copy { margin-top: 26px; }
+  .reason-copy h3 { font-size: clamp(24px, 2vw, 30px); }
+  .route .wrap { grid-template-columns: 1fr; gap: 34px; align-items: start; }
+  .route-track { grid-template-columns: repeat(5, 1fr); gap: 18px; }
+  .route-stop b { font-size: 16px; }
+  @media (max-width: 1050px) {
+    .route-track { grid-template-columns: repeat(3, 1fr); }
+  }
+  @media (max-width: 860px) {
+    .reasons { grid-template-columns: 1fr; }
+  }
+  @media (max-width: 760px) {
+    .hero-when { font-size: 34px; }
+    .route-track { grid-template-columns: 1fr; }
+  }
+  .price-deadline { margin-top: 14px; font-size: 13px; font-weight: 600; letter-spacing: .04em; color: var(--terra); }
+  .closing { border-top: 1px solid var(--line); padding-top: 76px; margin-top: 10px; }
+  .closing h2 { white-space: pre-line; }
+  .footer-top .foot-links { display: flex; gap: 22px; align-items: center; }
+  .footer-top .foot-links a { color: inherit; text-decoration: none; }
+
+  .manifest { padding: 86px 0 0; }
+  .manifest-lead { font-family: var(--serif); font-size: clamp(22px, 2.85vw, 37px); line-height: 1.18; letter-spacing: -.01em; }
+  .manifest-p { margin-top: 24px; font-size: clamp(16px, 1.35vw, 19px); line-height: 1.65; color: var(--ink); opacity: .78; }
+  .divider { border: 0; border-top: 1px solid var(--line); margin: 54px 0 0; }
+  .two-times { font-family: var(--serif); font-size: clamp(22px, 2.6vw, 34px); color: var(--muted); margin: 104px 0 34px; }
+  .worlds { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; padding-bottom: 20px; }
+  .world-col .world-lead { font-family: var(--serif); font-size: clamp(20px, 1.9vw, 26px); line-height: 1.32; margin-bottom: 26px; min-height: 2.9em; }
+  .world-col .reason-copy { margin-top: 24px; }
+  .world-col .reason-copy .caption { margin: 0 0 10px; font-size: 11px; font-weight: 600; letter-spacing: .22em; color: var(--terra); }
+  .world-col .reason-copy h3 { font-family: var(--serif); font-weight: 400; font-size: clamp(24px, 2.1vw, 30px); margin-bottom: 12px; }
+  .world-col .reason-copy p { font-size: 16px; color: var(--muted); }
+  @media (min-width: 1100px) { .manifest-lead { white-space: nowrap; } }
+  @media (max-width: 860px) {
+    .manifest { padding-top: 58px; }
+    .two-times { margin: 62px 0 28px; }
+    .worlds { grid-template-columns: 1fr; gap: 46px; }
+    .world-col .world-lead { min-height: 0; }
+  }
+
+  /* ---------- визуальная настройка: воздух и размеры ---------- */
+  .manifest { padding: 64px 0 0; }
+  .manifest-lead { font-size: clamp(21px, 2.5vw, 33px); }
+  .manifest-p { margin-top: 18px; font-size: clamp(15px, 1.15vw, 17px); }
+  .divider { margin: 38px 0 0; }
+  .two-times { font-size: clamp(17px, 1.7vw, 23px); margin: 54px 0 26px; }
+  .worlds { gap: 44px; padding-bottom: 8px; }
+  .world-col .world-lead { font-size: clamp(16px, 1.45vw, 21px); line-height: 1.38; margin-bottom: 20px; min-height: 3.1em; }
+  .world-col .reason-copy { margin-top: 18px; }
+  .world-col .reason-copy h3 { font-size: clamp(21px, 1.7vw, 25px); margin-bottom: 9px; }
+  .world-col .reason-copy p { font-size: 15px; }
+  .route { padding: 48px 0; }
+  .route h2 { font-size: 29px; margin-top: 0; }
+  .route .wrap { gap: 26px; }
+  .route-stop span { white-space: pre-line; }
+  .program { padding: 56px 0; }
+  .day { padding: 40px 0; gap: 52px; }
+  .day-visual { min-height: 320px; }
+  .closing { padding: 52px 0 76px; }
+  .closing h2 { font-size: clamp(24px, 2.8vw, 38px); margin: 12px auto 18px; }
+  .mountain { min-height: 400px; }
+  .comfort { padding: 72px 0; }
+  .comfort-grid { gap: 30px; margin-top: 32px; }
+  .author { padding: 64px 0; }
+  .author h2 { margin-bottom: 30px; }
+  .author-grid.solo .person { grid-template-columns: minmax(220px, 270px) 1fr; gap: 38px; align-items: start; }
+  .author-grid.solo .person .photo-slot { grid-row: span 6; margin-bottom: 0; }
+  .author-grid.solo .person h3 { font-size: 24px; margin-bottom: 10px; }
+  .author-grid.solo .person p { font-size: 15.5px; }
+  .author-grid.solo .person p + p { margin-top: 11px; }
+  .price { padding: 76px 0; }
+  .price h2 { margin: 10px 0 30px; }
+  .price-top { margin-bottom: 38px; }
+  .price-deal { margin-top: 36px; padding-top: 24px; }
+  .faq { padding: 72px 0; }
+  @media (max-width: 760px) {
+    .hero-when { font-size: 21px; }
+    .hero-sub { font-size: 11px; }
+  }
+  @media (max-width: 860px) {
+    .manifest { padding-top: 48px; }
+    .two-times { margin: 40px 0 22px; }
+    .day { gap: 22px; }
+  }
+
+  .price-top { grid-template-columns: 1fr; }
+
+  /* ---------- правки по обратной связи ---------- */
+  .two-times { color: var(--ink); opacity: .72; }
+  .worlds { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 64px; max-width: 1020px; padding-bottom: 52px; }
+  .worlds .reason-photos { gap: 8px; }
+  .worlds .reason-photos .shot { height: 108px; }
+  .worlds .reason-photos .shot.wide { height: 238px; }
+  .world-col .world-lead { font-size: clamp(15px, 1.3vw, 19px); min-height: 4.3em; margin-bottom: 18px; }
+  .world-col .reason-copy h3 { font-size: clamp(20px, 1.55vw, 23px); }
+  .world-col .reason-copy p { font-size: 14.5px; }
+  .author { padding: 48px 0 56px; }
+  .author h2 { margin-bottom: 22px; }
+  .author-grid.solo .person { grid-template-columns: minmax(260px, 330px) 1fr; gap: 44px; }
+  .author-grid.solo .person h3 { margin-top: 0; margin-bottom: 16px; }
+  @media (max-width: 860px) {
+    .worlds { gap: 42px; padding-bottom: 36px; }
+  }
+
+  /* ---------- плашка манифеста и центрирование миров ---------- */
+  .manifest-band { background: var(--paper-2); padding: 56px 0 58px; margin-bottom: 8px; }
+  .manifest-band .manifest-lead { margin: 0; }
+  .manifest-band .manifest-p { opacity: .82; max-width: 96ch; }
+  .worlds-wrap { max-width: 1020px; margin: 0 auto; }
+  .worlds { max-width: none; margin: 0; }
+  .two-times { text-align: center; margin: 62px 0 30px; }
+  .author-grid.solo .person { grid-template-columns: minmax(280px, 380px) 1fr; column-gap: 46px; row-gap: 0; align-content: start; grid-auto-rows: min-content; }
+  .author-grid.solo .person p { font-size: 15.5px; line-height: 1.62; }
+  .author-grid.solo .person p + p { margin-top: 8px; }
+  @media (max-width: 860px) {
+    .manifest-band { padding: 42px 0 44px; }
+    .two-times { text-align: left; margin: 40px 0 22px; }
+  }
+
+  /* ---------- продающая часть ---------- */
+  .author-grid.solo .person { grid-template-columns: minmax(230px, 290px) 1fr; column-gap: 40px; }
+  .author-grid.solo .person .photo-slot { align-self: start; }
+  .price-deal { grid-template-columns: 1.2fr auto; align-items: center; }
+  .price-quiet { margin-top: 10px; font-size: 13.5px; color: #A9B5AB; max-width: 46ch; }
+  .price-deadline-bottom {
+    margin-top: 26px; padding-top: 20px; border-top: 1px solid #8FA096;
+    font-size: 14px; font-weight: 600; letter-spacing: .04em; color: var(--cream);
+  }
+  .paybar { display: flex; position: fixed; left: 0; right: 0; bottom: 0; z-index: 40;
+    align-items: center; justify-content: center; gap: 22px;
+    background: var(--ink); padding: 12px 22px calc(12px + env(safe-area-inset-bottom, 0px));
+    box-shadow: 0 -8px 24px rgba(20,35,30,.22);
+    transform: translateY(110%); transition: transform .25s ease; }
+  .paybar.show { transform: translateY(0); }
+  .paybar .sum { font-family: var(--serif); font-size: 21px; color: var(--cream); line-height: 1.1; }
+  .paybar .sum span { display: block; font-family: var(--sans); font-size: 10.5px; letter-spacing: .1em;
+    text-transform: uppercase; color: #A9B5AB; margin-top: 2px; }
+  .paybar .btn { min-height: 46px; padding: 12px 22px; font-size: 14px; gap: 14px; }
+  body { padding-bottom: 82px; }
+  @media (max-width: 760px) {
+    .paybar { justify-content: space-between; gap: 14px; padding: 10px 16px calc(10px + env(safe-area-inset-bottom, 0px)); }
+    .price-deal { grid-template-columns: 1fr; }
+    .price-deal .btn { width: 100%; }
+  }
+
+  /* ---------- симметрия и выравнивание ---------- */
+  .manifest-band { text-align: center; }
+  .manifest-band .manifest-lead { margin: 0 auto; }
+  .manifest-band .manifest-p { margin: 18px auto 0; max-width: 88ch; }
+  .author-grid.solo .person .photo-slot { aspect-ratio: auto; height: 100%; align-self: stretch; }
+  .author-grid.solo .person p { white-space: pre-line; }
+  .author-grid.solo .person p:first-of-type { font-size: 17px; color: var(--ink); }
+  @media (max-width: 860px) {
+    .manifest-band { text-align: left; }
+    .manifest-band .manifest-lead, .manifest-band .manifest-p { margin-left: 0; margin-right: 0; }
+    .author-grid.solo .person .photo-slot { height: auto; aspect-ratio: 4 / 5; }
+  }
+
+  .day-visual.has-collage { background: transparent; min-height: 420px; }
+  .day-collage { position: absolute; inset: 0; display: grid; gap: 8px; }
+  .day-collage .shot { position: relative; inset: auto; width: 100%; height: 100%; background-size: cover; background-position: center; background-color: #BDC3B4; }
+  .day-visual.has-collage { min-height: 480px; }
+  .day-visual.n2 .day-collage { grid-template-columns: 1fr 1fr; grid-template-rows: 1fr; }
+  .day-visual.n3 .day-collage { grid-template-columns: repeat(3, 1fr); grid-template-rows: 1fr; }
+  .day-collage .im-moy-noski { background-position: 60% center; }
+  .day-collage .im-moy-ushchelie { background-position: center center; }
+  .day-collage .im-moy-most { background-position: center center; }
+  .im-moy-okno-stupa { background-position: center 32%; }
+  @media (max-width: 760px) {
+    .day-visual.has-collage { min-height: 360px; }
+  }
+
+  /* ---------- финальная мобильная настройка ---------- */
+  @media (max-width: 860px) {
+    .worlds { grid-template-columns: 1fr !important; gap: 40px; }
+    .world-col .world-lead { min-height: 0 !important; font-size: 18px; }
+    .worlds .reason-photos .shot { height: 96px; }
+    .worlds .reason-photos .shot.wide { height: 210px; }
+    .world-col .reason-copy h3 { font-size: 23px; }
+    .manifest-band .manifest-lead { font-size: 23px; }
+    .day-visual.has-collage { min-height: 340px; }
+  }
+  @media (max-width: 480px) {
+    .hero h1 { font-size: 28px; }
+    .manifest-band .manifest-lead { font-size: 21px; }
+  }
+</style>
+</head>
+<body>
+<div id="root"></div>
+<script id="data" type="application/json">{"title": "Непал для своих", "brand": "НЕПАЛ", "brandSub": "трек к Пунхиллу и жизнь в долине", "nav": ["Впечатления", "Программа", "Как идём", "Даты ↗"], "heroEyebrow": "", "heroTitle1": "Непал", "heroTitle2": "для своих", "heroLead": "Затеряемся в переулках старого города,\nвстретим рассвет в Гималаях\nи, возможно, узнаем себя чуть лучше.", "heroBtn": "Написать", "heroLink": "Что нас ждёт ↓", "heroWhen": "14 – 24 ноября 2026", "heroDates": "14 – 24 ноября", "heroPlace": "", "facts": [["11 дней / 10 ночей", "город и горы"], ["Трек Пунхилл", "четыре дня по тропе"], ["3 210 м", "высшая точка маршрута"], ["Максимум 6 человек", "маленькая группа своих"], ["Два перелёта внутри страны", "включены в стоимость"]], "routeEyebrow": "", "routeTitle": "Маршрут", "route": [["Катманду", "Останавливаемся на Боуде,\nизучаем долину", "ДНИ 1–4"], ["Покхара", "Озеро Фева", "ДЕНЬ 5"], ["Пунхилл", "Трек", "ДНИ 6–9"], ["Снова Покхара", "Озеро и отдых", "ДНИ 9–10"], ["Катманду", "Возвращаемся на Боуду", "ДЕНЬ 11"]], "programEyebrow": "Программа путешествия · 11 дней", "programTitle": "Что делаем?", "programNote": "От первого вечера у Ступы до рассвета у Гималаев: вот что будем делать, видеть и пробовать.", "days": [{"img": "drug-boudha", "alt": "Ступа Боуднатх", "place": "Прилёт в Катманду · Боуда", "h": "Лампадки у Ступы и ужин на крыше.", "legend": "", "ps": ["Прилетаем, оставляем вещи в отеле и выходим на Боуду – тибетский квартал вокруг огромной белой Ступы, одной из самых больших в мире. В воздухе можжевельник, над головой флаги-лунгта, навстречу бабушки с чётками. Гуляем, созерцаем, прибываем в город.", "Днём полтора часа тибетского массажа – чтобы перелёт остался позади. Вечером присоединяемся к Коре – кругу вокруг Ступы. Кто хочет, зажигает лампадку. Потом забираемся на крышу на ужин и смотрим, как в темноте загорается купол. Наше путешествие началось."], "meta": ""}, {"img": "sluzhba-truby", "alt": "Монахи на утренней службе", "place": "Монастырь Шечен · Пашупатинатх", "h": "Утро в монастыре, библиотека и вечер у реки Багмати.", "legend": "Иногда самое интересное в путешествии – сесть рядом и немного послушать. Сегодня для этого будет целое утро.", "ps": ["Приходим в Шечен рано: сначала один голос, затем низкий гул, барабаны и длинные трубы. После службы попробуем поговорить с монахом о жизни за этими стенами – можно задавать самые обычные человеческие вопросы. Там же заглянем в библиотеку: тибетские тексты, которые собирали и спасали десятилетиями.", "Потом изучаем Боуду поглубже: что означают глаза, зачем вращают барабаны и почему люди снова и снова идут по кругу. После рассказа – чайная и время посмотреть на всё уже чуть внимательнее.", "Вечером едем на Пашупатинатх. Это огромный храмовый комплекс на реке, здесь проходят погребальные обряды. Мы гуляем в стороне от церемоний – каждый выбирает комфортную для себя дистанцию."], "meta": ""}, {"img": "zakat-ktm", "alt": "Закат над Катманду", "place": "Пещеры Асура · Сваямбунатх", "h": "Пещеры Асура и закат над Катманду.", "legend": "", "ps": ["Уезжаем из города в холмы, к пещерам Асура. Идём, дышим, слушаем историю этого места. Если будет возможность, попадаем на пуджу - религиозную церемонию.", "К закату едем на Сваямбунатх – древнейшую Ступу долины Катманду, ей около полутора тысяч лет. Длинная лестница, любопытные обезьяны и весь город внизу в золоте."], "meta": ""}, {"img": "patan-rassvet", "alt": "Патан на рассвете", "place": "Патан · Тамель", "h": "Город мастеров и закупки перед треком.", "legend": "", "ps": ["Королевство Лалитпур, или Патан, – город мастеров и художников. Разглядываем резные окна, львов у входов и дворы, где до сих пор работают с бронзой. Заглянем на площадь Дурбар – это местный Кремль.", "А дальше едем в знаменитый Тамель. Кому нужно снаряжение к треку – пуховка, палки, термобельё, дождевик и другое – закупаемся здесь, обычно это заметно дешевле. А кому снаряжение не нужно, здесь местные бренды, украшения ручной работы, поющие чаши. Плюс кашемир и трикотаж - в Катманду это отдельный вид спорта."], "meta": ""}, {"img": "feva", "alt": "Лодки на озере Фева", "place": "Катманду → Покхара · озеро Фева", "h": "Перелёт к озеру и лодка к островному храму.", "legend": "", "ps": ["Утром короткий перелёт в Покхару – и всё меняется: вместо города вода, горы на горизонте и совсем другой воздух. Идём гулять вдоль набережной, наслаждаемся видами и местной жизнью.", "Днём плывём на лодке по Феве к храму на острове – там тихо и спокойно. Вечером собираем рюкзаки и ложимся пораньше: завтра начинается тропа. Всё лишнее остаётся в отеле – в горы идём налегке."], "meta": ""}, {"img": "trek-lodzha", "alt": "Терраса лоджа с видом на горы", "place": "Заброска · Гхорепани · 2 870 м", "h": "Трек через лес и лучший лодж с видом.", "legend": "ДЕНЬ 1 ТРЕКА", "ps": ["Утром – заброска на джипе к началу тропы. Дальше идём сами: лес, ручьи, деревни, где на верандах сушат кукурузу. Поднимаемся спокойно, 4–5 часов, с остановками на чай, перекусы и созерцание.", "К вечеру приходим в Гхорепани, высокую деревню на гребне, и заселяемся в лучший лодж – тот, где Гималаи видно прямо из окна и с террасы. Чай, ужин, тишина. За окном темнеет, а на горах ещё долго держится последний свет."], "meta": "", "imgs": [["trek-lodzha", "Терраса лоджа с видом на горы"], ["moy-noski", "Утро на террасе лоджа"]]}, {"img": "punhil-rassvet", "alt": "Рассвет над Гималаями", "place": "Пунхилл 3 210 м · Тадапани", "h": "Рассвет на Пунхилле и спуск в ущелье.", "legend": "ДЕНЬ 2 ТРЕКА", "ps": ["Рассвет встречаем совсем рядом с лоджем. Сначала сереет, потом снег на Дхаулагири и Аннапурне становится розовым, а Мачапучаре – рыбий хвост – выходит из тени последним. Мы просто сидим и смотрим, попивая горячий чаёк. Ради этого утра сюда и идут.", "Спускаемся, завтракаем и уходим дальше по хребту в сторону Тадапани. Тропа идёт через мшистый лес, весь день нам то открываются, то прячутся горы. Ночуем в лодже, где утром из окна видно и ущелье, и снежную гряду."], "meta": ""}, {"img": "ushchelie", "alt": "Деревня на склоне над ущельем", "place": "Тадапани → Гандрук · 1 940 м", "h": "Утро над ущельем и деревни гурунгов.", "legend": "ДЕНЬ 3 ТРЕКА", "ps": ["Утром никуда не спешим: выходим на террасу с чаем и наслаждаемся видами на ущелье и на горы.", "Потом спуск через лес: становится теплее, появляются террасы, и мы проходим знаменитые гималайские подвесные мосты – с них открывается потрясающий вид на реку и долину.", "Приходим в Гандрук – большую каменную деревню гурунгов. Узкие мощёные улочки, сланцевые крыши и вид на Аннапурну Южную прямо с площади. Здесь лёгкий темп и время просто смотреть."], "meta": "", "imgs": [["moy-most", "Подвесной мост над ущельем"], ["moy-tuman-trek", "Тропа в облаке"]]}, {"img": "reka-gory", "alt": "Река в ущелье", "place": "Гандрук → Джину Данда → Покхара", "h": "Горячие источники у реки и возвращение к озеру.", "legend": "ДЕНЬ 4 ТРЕКА", "ps": ["Спускаемся к реке Моди Кхола. У деревни, прямо у воды, устроены горячие источники: они хорошо расслабляют мышцы после четырёх дней тропы.", "Дальше джип и дорога обратно в Покхару. Вечером – ужин у озера и приятные посиделки после трека."], "meta": ""}, {"img": "holmy", "alt": "Холмы над озером", "place": "Покхара · свободный день", "h": "День без плана.", "legend": "", "ps": ["Этот день мы не расписываем заранее. Захочется двигаться – поедем в тибетское поселение: ковры ручной работы, небольшие лавки, чай и момо. Или по окрестностям: водопад, пещера, смотровая над озером. Захочется встретить рассвет ещё раз – поднимемся на Сарангкот.", "Захочется просто лежать – лежим. Кофе у воды, книжка, каяк, массаж, прогулка вдоль набережной. После гор это ощущается особенно хорошо.", "Вечером собираемся на общий ужин: вспоминаем, где побывали, и делимся тем, что у каждого осталось после этих дней."], "meta": ""}, {"img": "boudha-vecher", "alt": "Ступа Боуднатх вечером", "place": "Покхара → Катманду", "h": "Утренний рейс, последние покупки – и по домам.", "legend": "", "ps": ["Утром летим в Катманду. Если хватит времени, можно доехать до Тамеля или докупить всё нужное прямо на Боуде.", "Кто-то едет в аэропорт, кто-то остаётся в Непале подольше. Если захочется продолжить, подскажу, куда двигаться дальше: в Непале очень много мест, которые хочется показать."], "meta": ""}], "mountainEyebrow": "УТРО НА ПУНХИЛЛЕ", "mountainTitle": "Некоторые планы хочется строить вокруг рассвета.", "mountainNote": "Пунхилл – 3 210 метров и одна из самых красивых панорам Непала: восьмитысячники Дхаулагири и Аннапурна, и Мачапучаре, на который до сих пор запрещено подниматься.", "comfortEyebrow": "Как это устроено", "comfortTitle": "Как будем идти?", "comfortNote": "", "comfort": [["01 / ТЕМП", "Есть время выдохнуть", "Чередуем прогулки, поездки и остановки на чай. После перелёта нас ждёт тибетский массаж – чтобы прийти в себя и привыкнуть к новому месту. Насыщенные дни идут вперемешку со спокойными."], ["02 / ГОРЫ", "Идём комфортным темпом", "Четыре дня по 4–5 часов ходьбы, с остановками на чай, обед и созерцание. Максимальная высота – 3 210 м на Пунхилле: на такой высоте горная болезнь практически не встречается. Маршрут выбран несложный – он по силам каждому, кто привык ходить пешком."], ["03 / ПРОЖИВАНИЕ", "Живём на одном месте", "Четыре ночи подряд на Боуде – не нужно собирать чемодан каждое утро. Размещение по двое; для одноместного есть доплата."], ["04 / ДОРОГА", "Комфорт продуман", "В Покхару летим самолётом – это полчаса вместо долгой дороги. По земле передвигаемся на машинах. Тяжёлые рюкзаки нести не придётся: на треке с нами портеры, у каждого участника они берут до 6 кг, на плечах остаётся 3–4 кг."]], "authorEyebrow": "кто ведёт", "authorTitle": "Поедем вместе", "authors": [{"name": "", "slot": "Муштари", "img": "mushtari", "paras": ["Привет!\nМеня зовут Муштари. Мне 37 лет.", "Была в 30+ странах, но именно в Непале со мной происходит что-то особенное. Здесь включается режим ученика и возвращается то самое детское любопытство: всё настолько необычно, что хочется рассматривать, спрашивать и понимать. Я была здесь дважды, и каждый раз хочется возвращаться.", "За семь лет я провела больше 55 выездных мероприятий для S7 Airlines, Билайна, Wildberries, X5 Retail и других компаний. А ещё прошла 500-часовое обучение преподавателей йоги, практиковала випассану в Индии и однажды получила благословение Далай-ламы XIV.", "А сейчас хочется собрать путешествие для своих – маленькой группой. Познакомить вас с тибетской культурой, которая мне очень близка, и с людьми, которые как будто правда знают, что такое счастье и любовь. Показать любимые горы, тропы и ту природу, ради которой я сюда возвращаюсь. И быть в этом путешествии проводником."]}], "priceEyebrow": "стоимость", "priceTitle": "Сколько это стоит", "priceSum": "$1 270", "priceSub": "за человека, размещение в двухместном номере", "priceWhen": "14 – 24 ноября 2026 · 11 дней / 10 ночей", "priceExtra": "Одноместное размещение – доплата $340", "priceBook1": "Место закрепляется предоплатой – $600.", "inclTitle": "Входит в стоимость", "incl": ["Все отели по маршруту, двухместное размещение", "Перелёты Катманду – Покхара – Катманду", "Все трансферы", "Пермиты ACAP и TIMS", "Местный гид на треке", "Портер на треке, несёт 6 кг", "Экскурсии и входные билеты", "Сеанс тибетского массажа"], "exclTitle": "Оплачивается отдельно", "excl": ["Перелёт до Непала и обратно", "Виза (делается по прилёту)", "Страховка с покрытием трекинга", "Питание: завтраки, обеды и ужины", "Снаряжение, сувениры и личные расходы"], "priceBtn": "Забронировать", "bookingEyebrow": "даты", "bookingTitle": "Когда едем?", "bookingLead": "Даты собираем под компанию.", "priceNote": "", "dates": [], "bookingBtn": "Написать", "faqEyebrow": "До того, как собрать рюкзак", "faqTitle": "Наверняка хочется спросить.", "faq": [["Насколько тяжёлый трек?", "Четыре дня, по 4–5 часов ходьбы в день. Специальная подготовка не нужна, нужна привычка ходить: если за месяц-полтора до поездки гулять по часу в день и подниматься по лестницам, этого достаточно. Тяжёлое нести не придётся – 6 кг из рюкзака берёт портер, он включён в стоимость."], ["А высота хорошо переносится?", "Максимальная точка – Пунхилл, 3 210 м, и проводим мы на ней около часа. Ночуем не выше 2 870 м. На таких высотах горная болезнь встречается редко, а специальная акклиматизация не требуется. Поднимаемся постепенно и пьём много воды."], ["Что если я не хочу в горы?", "Можно остаться в Покхаре на эти четыре дня: озеро, массаж, окрестности, кафе с видом. Присоединишься к группе, когда мы спустимся. Это совершенно нормальный вариант."], ["Как устроены лоджи на треке?", "Это простые горные гостевые дома: комната с двумя кроватями и тёплыми одеялами, общий зал с печкой, где все собираются по вечерам. Душ горячий, иногда за небольшую доплату. Розетки есть, интернет местами. Обстановка простая, но тёплая."], ["Что брать с собой?", "Пришлю подробный список, когда договоримся. Специально закупаться заранее не нужно: всё необходимое – пуховку, палки, термобельё, дождевик – купим в Катманду на четвёртый день, там это заметно дешевле. Из дома важно привезти только удобные разношенные ботинки."], ["Почему ноябрь?", "Ноябрь – самое ясное небо в году: Дхаулагири и Аннапурна открыты почти каждое утро, дождей нет, на тропе сухо. Середина месяца хороша ещё и тем, что осенние праздники уже прошли и страна живёт обычной жизнью. Ночи в горах холодные, около нуля, поэтому понадобится тёплая одежда."], ["Это религиозное путешествие?", "Это знакомство со страной, в которой религия вплетена в повседневную жизнь. Символику объясняем, за ритуалами можно наблюдать. Участвовать, совершать подношения или принимать чьи-то убеждения не требуется."], ["А кремации обязательно смотреть?", "Нет. В Пашупатинатхе можно гулять в стороне от погребальных церемоний. Каждый выбирает комфортную дистанцию."], ["Можно приехать одному или остаться подольше?", "Приехать одному можно: нас максимум шестеро. Варианты размещения и доплату за отдельный номер обсудим до бронирования. Если захочется продолжить путешествие после одиннадцатого дня, подскажу направления."]], "closingTitle": "Одиннадцать дней,\nпамять о которых останется навсегда.", "closingNote": "14 – 24 ноября 2026 · нас будет максимум шестеро · набор закрывается 12 октября", "closingBtn": "Написать", "footer": "НЕПАЛ ДЛЯ СВОИХ · 14–24 ноября 2026 · трек Гхорепани – Пунхилл – Гандрук", "bookEyebrow": "ноябрь 2026", "bookTitle": "Как поехать", "bookWhen": "14 – 24 ноября 2026", "bookWhenSub": "11 дней / 10 ночей · максимум 6 человек", "bookDeadline": "", "bookHow1": "Напиши мне – расскажу подробности, пришлю список вещей и отвечу на любые вопросы.", "bookHow2": "Стоимость и отели пришлю в переписке.", "bookBtn": "Написать", "bookQuiet": "Оплаты на странице нет: всё в личной переписке.", "barSum": "$1 270", "barNote": "11 дней · 14–24 ноября", "barBtn": "Забронировать", "priceDeadline": "Набор закрывается 12 октября", "heroSub": "11 дней в маленькой группе", "manifestLead": "Главная ценность этой поездки – погружение.", "manifestP": "В этой поездке будет хороший темп без спешки: ощутим атмосферу, познакомимся с культурой изнутри, остановимся поболтать с местными, разглядим по-настоящему непальскую, буддийскую, тибетскую жизнь – и, возможно, станем ещё чуточку ближе к себе.", "twoTimes": "У этой страны будто два времени и измерения.", "worlds": [{"lead": "Внизу – средневековые дворы, рынки, монахи в бордовом и дым можжевельника по утрам.", "cap": "ДНИ 1–5 · КАТМАНДУ", "h": "Долина Катманду", "p": "Тибетский квартал вокруг огромной белой Ступы, утренние службы с трубами и барабанами, дворы ремесленников Патана, лестницы Сваямбунатха и закат над всем городом.", "imgs": [["glaza-stupy", "Глаза Ступы"], ["monah-nit", "Монах завязывает защитную нить"], ["lampady", "Лампады у Ступы"], ["drug-durbar", "Резьба старого города"]]}, {"lead": "Наверху – несокрушимые, вечные восьмитысячники Гималаев, снег и тишина над облаками.", "cap": "ДНИ 6–9 · ТРЕК", "h": "Гималаи", "p": "Четыре дня по тропе: рододендроновый лес, деревни гурунгов, подвесные мосты над рекой и горячие источники. И конечно, розовеющие пики восьмитысячников на рассвете.", "imgs": [["punhil-rassvet", "Рассвет над Гималаями"], ["trek-stupeni", "Каменные ступени в лесу"], ["trek-lodzha", "Терраса лоджа с видом на горы"], ["gornaya-derevnya", "Горная деревня"]]}]}</script>
+<script id="app">
+const D = JSON.parse(document.getElementById('data').textContent);
+const esc = s => String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+const T = (tag, k, cls) => `<${tag}${cls?' class="'+cls+'"':''} data-k="${k}">${esc(get(k))}</${tag}>`;
+function get(path){ return path.split('.').reduce((o,p)=> o[/^\d+$/.test(p)?+p:p], D); }
+function set(path, val){
+  const parts = path.split('.'); const last = parts.pop();
+  const obj = parts.reduce((o,p)=> o[/^\d+$/.test(p)?+p:p], D);
+  obj[/^\d+$/.test(last)?+last:last] = val;
+}
+
+function render(){
+  const f = D.facts.map((x,i)=>`<div class="fact"><strong data-k="facts.${i}.0">${esc(x[0])}</strong><span data-k="facts.${i}.1">${esc(x[1])}</span></div>`).join('');
+  const worlds = D.worlds.map((w,i)=>`
+    <div class="world-col">
+      ${T('p',`worlds.${i}.lead`,'world-lead')}
+      <div class="reason-photos">${w.imgs.map((im,j)=>`<div class="shot im-${im[0]}${j===0?' wide':''}" role="img" aria-label="${esc(im[1])}"></div>`).join('')}</div>
+      <div class="reason-copy">
+        <div class="caption" data-k="worlds.${i}.cap">${esc(w.cap)}</div>
+        ${T('h3',`worlds.${i}.h`)}
+        ${T('p',`worlds.${i}.p`)}
+      </div>
+    </div>`).join('');
+  const route = D.route.map((r,i)=>`
+    <div class="route-stop"><b data-k="route.${i}.0">${esc(r[0])}</b><span data-k="route.${i}.1">${esc(r[1])}</span><small data-k="route.${i}.2">${esc(r[2])}</small></div>`).join('');
+  const daysNav = D.days.map((_,i)=>`<a href="#day${i+1}">День ${i+1}</a>`).join('');
+  const days = D.days.map((d,i)=>`
+    <article class="day" id="day${i+1}">
+      <figure class="day-visual${d.imgs ? ' has-collage n' + d.imgs.length : ''}">
+        ${d.imgs
+          ? `<div class="day-collage">${d.imgs.map(im => `<div class="shot im-${im[0]}" role="img" aria-label="${esc(im[1])}"></div>`).join('')}</div>`
+          : `<div class="shot im-${d.img}" role="img" aria-label="${esc(d.alt)}"></div><figcaption>${esc(d.alt)}</figcaption>`}
+      </figure>
+      <div>
+        <div class="day-heading"><span class="day-no">День ${i+1}</span><span class="day-place" data-k="days.${i}.place">${esc(d.place)}</span></div>
+        ${T('h3',`days.${i}.h`)}
+        ${d.legend ? `<div class="legend" data-k="days.${i}.legend">${esc(d.legend)}</div>` : ''}
+        ${d.ps.map((p,j)=>`<p data-k="days.${i}.ps.${j}">${esc(p)}</p>`).join('')}
+      </div>
+    </article>`).join('');
+  const comfort = D.comfort.map((c,i)=>`
+    <div class="comfort-item"><div class="n" data-k="comfort.${i}.0">${esc(c[0])}</div>${T('h3',`comfort.${i}.1`)}${T('p',`comfort.${i}.2`)}</div>`).join('');
+  const dates = D.dates.map((d,i)=>`
+    <div class="date-card">
+      <div><span class="date-large" data-k="dates.${i}.0">${esc(d[0])}</span><span class="date-small" data-k="dates.${i}.1">${esc(d[1])}</span></div>
+      <div class="tag" data-k="dates.${i}.2">${esc(d[2])}</div>
+    </div>`).join('');
+  const persons = D.authors.map((a,i)=>`
+    <div class="person">
+      <div class="photo-slot${a.img ? ' filled im-'+a.img : ''}" role="img" aria-label="${esc(a.slot)}">${a.img ? '' : esc(a.slot)}</div>
+      ${a.name ? T('h3',`authors.${i}.name`) : ''}
+      ${a.paras.map((t,j)=>`<p data-k="authors.${i}.paras.${j}">${esc(t)}</p>`).join('')}
+    </div>`).join('');
+  const inclList = D.incl.map((t,i)=>`<li data-k="incl.${i}">${esc(t)}</li>`).join('');
+  const exclList = D.excl.map((t,i)=>`<li data-k="excl.${i}">${esc(t)}</li>`).join('');
+  const faq = D.faq.map((q,i)=>`
+    <details><summary data-k="faq.${i}.0">${esc(q[0])}</summary><p data-k="faq.${i}.1">${esc(q[1])}</p></details>`).join('');
+
+  document.getElementById('root').innerHTML = `
+
+<header class="hero" id="top">
+  <div class="hero-bg im-hero-drug" role="img" aria-label="Ступа Боуднатх"></div>
+  <div class="hero-inner">
+    <div class="eyebrow" data-k="heroEyebrow">${esc(D.heroEyebrow)}</div>
+    <h1><span data-k="heroTitle1">${esc(D.heroTitle1)}</span> <em data-k="heroTitle2">${esc(D.heroTitle2)}</em></h1>
+    <p class="lead" data-k="heroLead">${esc(D.heroLead)}</p>
+    <div class="hero-actions">
+      <a class="btn" href="https://t.me/mushtari_k" target="_blank" rel="noopener"><span data-k="heroBtn">${esc(D.heroBtn)}</span> <span aria-hidden="true">↗</span></a>
+      <a class="hero-link" href="#about" data-k="heroLink">${esc(D.heroLink)}</a>
+    </div>
+    <div class="hero-when" data-k="heroWhen">${esc(D.heroWhen)}</div>
+      <div class="hero-sub" data-k="heroSub">${esc(D.heroSub)}</div>
+    <div class="hero-foot">
+      <div></div>
+      <div class="place" data-k="heroPlace">${esc(D.heroPlace)}</div>
+    </div>
+  </div>
+</header>
+
+<div class="wrap">
+  <div class="facts">${f}</div>
+
+  </div>
+
+  <section class="manifest-band" id="about">
+    <div class="wrap">
+      ${T('p','manifestLead','manifest-lead')}
+      ${T('p','manifestP','manifest-p')}
+    </div>
+  </section>
+
+  <div class="wrap">
+  <div class="worlds-wrap">
+    ${T('p','twoTimes','two-times')}
+    <section class="worlds">${worlds}</section>
+  </div>
+</div>
+
+<section class="route">
+  <div class="wrap">
+    <div>${D.routeEyebrow ? `<div class="eyebrow" data-k="routeEyebrow">${esc(D.routeEyebrow)}</div>` : ''}${T('h2','routeTitle')}</div>
+    <div class="route-track">${route}</div>
+  </div>
+</section>
+
+<div class="wrap">
+  <section class="program" id="program">
+    ${days}
+  </section>
+
+  <section class="closing">
+      <div class="symbol">✦</div>
+      ${T('h2','closingTitle')}
+      ${T('p','closingNote')}
+    <a class="btn" href="https://t.me/mushtari_k" target="_blank" rel="noopener"><span data-k="closingBtn">${esc(D.closingBtn)}</span> <span aria-hidden="true">↗</span></a>
+  </section>
+</div>
+
+
+
+<section class="mountain">
+  <div class="shot im-gryada" role="img" aria-label="Гималайская гряда на рассвете"></div>
+  <div class="wrap">
+    ${D.mountainEyebrow ? `<div class="eyebrow" data-k="mountainEyebrow">${esc(D.mountainEyebrow)}</div>` : ''}
+    ${T('h2','mountainTitle')}
+    ${T('p','mountainNote')}
+  </div>
+</section>
+
+<div class="wrap">
+  <section class="comfort" id="comfort">
+    <div class="section-head">
+      <div><div class="eyebrow muted" data-k="comfortEyebrow">${esc(D.comfortEyebrow)}</div>${T('h2','comfortTitle')}</div>
+      ${T('p','comfortNote')}
+    </div>
+    <div class="comfort-grid">${comfort}</div>
+  </section>
+</div>
+
+<section class="author" id="author">
+  <div class="wrap">
+    <div class="eyebrow muted" data-k="authorEyebrow">${esc(D.authorEyebrow)}</div>
+    ${T('h2','authorTitle')}
+    <div class="author-grid${D.authors.length < 2 ? ' solo' : ''}">${persons}</div>
+  </div>
+</section>
+
+<section class="price" id="price">
+  <div class="wrap">
+    <div class="eyebrow" data-k="priceEyebrow">${esc(D.priceEyebrow)}</div>
+    ${T('h2','priceTitle')}
+    <div class="price-top">
+      <div>
+        <div class="price-sum" data-k="priceSum">${esc(D.priceSum)}</div>
+        <div class="price-sub" data-k="priceSub">${esc(D.priceSub)}</div>
+        <div class="price-when" data-k="priceWhen">${esc(D.priceWhen)}</div>
+        <div class="price-extra" data-k="priceExtra">${esc(D.priceExtra)}</div>
+      </div>
+    </div>
+    <div class="incl">
+      <div>
+        <h3 data-k="inclTitle">${esc(D.inclTitle)}</h3>
+        <ul>${inclList}</ul>
+      </div>
+      <div class="out">
+        <h3 data-k="exclTitle">${esc(D.exclTitle)}</h3>
+        <ul>${exclList}</ul>
+      </div>
+    </div>
+    <div class="price-deal">
+      <div>
+        ${T('p','priceBook1')}
+      </div>
+      <a class="btn light" href="https://t.me/mushtari_k" target="_blank" rel="noopener"><span data-k="priceBtn">${esc(D.priceBtn)}</span> <span aria-hidden="true">↗</span></a>
+    </div>
+    <div class="price-deadline-bottom" data-k="priceDeadline">${esc(D.priceDeadline)}</div>
+  </div>
+</section>
+
+<div class="wrap">
+  <section class="faq">
+    <div><div class="eyebrow muted" data-k="faqEyebrow">${esc(D.faqEyebrow)}</div>${T('h2','faqTitle')}</div>
+    <div>${faq}</div>
+  </section>
+
+</div>
+
+<div class="wrap">
+</div>
+
+<div class="paybar" id="paybar" aria-hidden="true">
+  <div class="sum" data-k="barSum">${esc(D.barSum)}<span data-k="barNote">${esc(D.barNote)}</span></div>
+  <a class="btn" href="https://t.me/mushtari_k" target="_blank" rel="noopener"><span data-k="barBtn">${esc(D.barBtn)}</span> <span aria-hidden="true">↗</span></a>
+</div>
+
+<footer class="footer"><div class="wrap footer-top"><span data-k="footer">${esc(D.footer)}</span><span class="foot-links"><a href="https://t.me/mushtari_k" target="_blank" rel="noopener">t.me/mushtari_k</a> <a class="up" href="#top">Наверх ↑</a></span></div></footer>`;
+}
+
+render();
+
+(function paybar(){
+  const bar = document.getElementById('paybar');
+  const hero = document.querySelector('.hero');
+  if (!bar || !hero) return;
+  const onScroll = () => {
+    const past = window.scrollY > hero.offsetHeight * 0.85;
+    bar.classList.toggle('show', past);
+    bar.setAttribute('aria-hidden', past ? 'false' : 'true');
+  };
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+})();
+
+let editing = false, dirty = false, api = null;
+
+const bar = document.createElement('div');
+bar.className = 'editbar';
+bar.hidden = true;
+bar.innerHTML = '<span class="state"></span><button id="btnEdit">Править текст</button><button id="btnSave" class="primary" hidden>Сохранить</button>';
+document.body.appendChild(bar);
+
+const state = bar.querySelector('.state');
+const btnEdit = bar.querySelector('#btnEdit');
+const btnSave = bar.querySelector('#btnSave');
+
+function setEditing(on){
+  editing = on;
+  document.body.classList.toggle('editing', on);
+  document.querySelectorAll('#root [data-k]').forEach(el => {
+    el.contentEditable = on ? 'true' : 'false';
+    if (on) el.spellcheck = false;
+  });
+  btnEdit.textContent = on ? 'Закончить правку' : 'Править текст';
+  btnSave.hidden = !on;
+  state.textContent = on ? 'правки не сохранены' : '';
+  if (!on && dirty) state.textContent = 'есть несохранённые правки';
+}
+
+document.addEventListener('input', e => {
+  const el = e.target.closest('#root [data-k]');
+  if (!el || !editing) return;
+  set(el.dataset.k, el.innerText.replace(/\s+\n/g,'\n').trim());
+  dirty = true;
+  state.textContent = 'правки не сохранены';
+});
+
+document.addEventListener('click', e => {
+  if (editing && e.target.closest('#root a')) e.preventDefault();
+});
+
+btnEdit.addEventListener('click', () => setEditing(!editing));
+
+function buildDoc(){
+  const css = document.getElementById('css').textContent;
+  const app = document.getElementById('app').textContent;
+  const json = JSON.stringify(D).replace(/<\//g, '<\\/');
+  return '<!doctype html>\n<html lang="ru">\n<head>\n<meta charset="utf-8">\n<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">\n<title>' +
+    D.title.replace(/[<>&]/g,'') + '</title>\n' +
+    '<link rel="preconnect" href="https://fonts.googleapis.com">\n<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>\n' +
+    '<link href="https://fonts.googleapis.com/css2?family=Prata&family=Golos+Text:wght@400;500;600&display=swap" rel="stylesheet">\n' +
+    '<style id="css">' + css + '</style>\n</head>\n<body>\n<div id="root"></div>\n' +
+    '<script id="data" type="application/json">' + json + '<\/script>\n' +
+    '<script id="app">' + app + '<\/script>\n</body>\n</html>';
+}
+
+btnSave.addEventListener('click', async () => {
+  if (!api) return;
+  btnSave.disabled = true;
+  state.textContent = 'сохраняю…';
+  try {
+    await api.publish(buildDoc());
+    dirty = false;
+    state.textContent = 'сохранено';
+  } catch (err) {
+    const code = err && err.code;
+    if (code === 'conflict') state.textContent = 'кто-то сохранил раньше, страница обновится';
+    else if (code === 'not_writer' || code === 'not_granted') { state.textContent = 'только просмотр'; bar.hidden = true; }
+    else state.textContent = 'не сохранилось, попробуй ещё раз';
+    btnSave.disabled = false;
+  }
+});
+
+(async () => {
+  try {
+    api = await claude.use('artifact');
+  } catch (e) { api = null; }
+  if (api) { bar.hidden = false; }
+})();
+</script>
+</body>
+</html>
