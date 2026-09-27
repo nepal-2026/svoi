@@ -867,6 +867,13 @@
   }
 
   .price-oferta { margin-top: 14px; font-size: 12.5px; line-height: 1.55; color: #9AA79C; max-width: 62ch; }
+
+  /* браузер не рисует и не грузит то, что далеко внизу */
+  .day, .worlds, .comfort, .author, .faq { content-visibility: auto; }
+  .day { contain-intrinsic-size: auto 560px; }
+  .worlds { contain-intrinsic-size: auto 700px; }
+  .author { contain-intrinsic-size: auto 600px; }
+  .faq { contain-intrinsic-size: auto 700px; }
 </style>
 </head>
 <body>
